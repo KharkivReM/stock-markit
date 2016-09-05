@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=TWTR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - ''
+      X-Aspnet-Version:
+      - ''
+      P3p:
+      - CP="NON PHY ONL UNI PUR FIN COM NAV INT DEM STA HEA CUR ADM DEV OUR IND",
+        policyref="/w3c/p3p.xml"
+      Set-Cookie:
+      - 3481%5F0=3341EF7F0399B17CB017F9EBD7F5F1BD5091D0BC6FB4A567CA792985822FFD10;
+        path=/; HttpOnly
+      - GZIP=1; expires=Sat, 04-Sep-2021 19:18:44 GMT; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 05 Sep 2016 19:18:43 GMT
+      Content-Length:
+      - '378'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Status":"SUCCESS","Name":"Twitter Inc","Symbol":"TWTR","LastPrice":19.54,"Change":0.0399999999999991,"ChangePercent":0.205128205128201,"Timestamp":"Fri
+        Sep 2 15:59:00 UTC-04:00 2016","MSDate":42615.6659722222,"MarketCap":13828985580,"Volume":949554,"ChangeYTD":23.14,"ChangePercentYTD":-15.5574762316335,"High":19.87,"Low":19.355,"Open":19.61}'
+    http_version: 
+  recorded_at: Mon, 05 Sep 2016 19:18:44 GMT
+- request:
+    method: get
+    uri: http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=TWTR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - ''
+      X-Aspnet-Version:
+      - ''
+      P3p:
+      - CP="NON PHY ONL UNI PUR FIN COM NAV INT DEM STA HEA CUR ADM DEV OUR IND",
+        policyref="/w3c/p3p.xml"
+      Set-Cookie:
+      - 3481%5F0=C4D853D2672331B8914DC4512337700963C25A602B0C546F69C622EF7562EA04;
+        path=/; HttpOnly
+      - GZIP=1; expires=Sat, 04-Sep-2021 19:18:44 GMT; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 05 Sep 2016 19:18:43 GMT
+      Content-Length:
+      - '378'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Status":"SUCCESS","Name":"Twitter Inc","Symbol":"TWTR","LastPrice":19.54,"Change":0.0399999999999991,"ChangePercent":0.205128205128201,"Timestamp":"Fri
+        Sep 2 15:59:00 UTC-04:00 2016","MSDate":42615.6659722222,"MarketCap":13828985580,"Volume":949554,"ChangeYTD":23.14,"ChangePercentYTD":-15.5574762316335,"High":19.87,"Low":19.355,"Open":19.61}'
+    http_version: 
+  recorded_at: Mon, 05 Sep 2016 19:18:44 GMT
+recorded_with: VCR 3.0.3
