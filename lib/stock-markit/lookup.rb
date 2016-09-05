@@ -1,21 +1,32 @@
-#  Lookup a Stock by Symbol
-#
-# Author::    Michael Heijmans  (mailto:parabuzzle@gmail.com)
-# Copyright:: Copyright (c) 2016 Michael Heijmans
-# License::   MIT
-
 module StockMarkit
+
+  # Lookup a Stock by Symbol
+  #
+  # @attr_reader [String,Symbol] symbol The symbol of the stock to lookup
+  # @attr_reader [Hash] options Options hash for httparty
+  # @attr_reader [Array<StockMarkit::Stock>] results The stocks that match the symbol. This is populated on the first call of <#fetch>
+  #
+  # @author Michael Heijmans  (mailto:parabuzzle@gmail.com)
+  #
+  # Copyright:: Copyright (c) 2016 Michael Heijmans
+  # License::   MIT
   class Lookup
     include ::HTTParty
     base_uri 'dev.markitondemand.com'
 
-    attr_accessor :symbol, :options, :results
+    attr_reader :symbol, :results
 
-    def initialize(symbol, options = nil )
+    # @param [String, Symbol] symbol The stock's ticker symbol
+    def initialize(symbol)
       @symbol  = symbol.to_sym.upcase
-      @options = options || { query: {input: @symbol} }
+      @options = { query: {input: @symbol} }
     end
 
+    # Fetch stocks matching @symbol from the api
+    #
+    # This method memoizes the results and returns the contents
+    # of the results variable instead of asking the api again
+    # @return [Array<StockMarkit::Stock>]
     def fetch
       @results ||= lookup_with_api
     end

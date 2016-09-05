@@ -17,4 +17,5 @@ group :test, :development do
   gem 'coveralls', require: false
   gem 'vcr'
   gem 'webmock'
+  gem 'yard'
 end

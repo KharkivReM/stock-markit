@@ -22,7 +22,22 @@ gem install stock-markit
 
 # Usage
 
-TODO
+## Stock Lookup API
+
+```
+require 'stock-markit'
+
+StockMarkit.lookup(:twtr) #> [ StockMarkit::Stock ]
+```
+
+## Stock Quote API
+
+```
+require 'stock-markit'
+
+StockMarkit.quote(:twtr) #> StockMarkit::Quote
+```
+
 
 # Contributing
  * fork the repository

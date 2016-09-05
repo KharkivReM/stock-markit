@@ -12,22 +12,33 @@ require 'oj'
 module StockMarkit
 
   # require library file that was passed
+  # @param [String] lib Library path to require
   def self.require_lib(lib)
     require lib
   end
 
-  # iterates through the passed in array of
+  # Iterates through the passed in array of
   # library paths and requires each of them
+  # @param [Array] libs Array of libraries to require
   def self.require_libs(libs)
     libs.each do |lib|
       self.require_lib(lib)
     end
   end
 
+  # Uses the lookup service to find stocks with the given symbol
+  # @param [String, Symbol] symbol The ticker symbol to lookup
+  # @return [Array<StockMarkit::Stock>] An Array of Stock Objects that match the given symbol
+  # @see StockMarkit::Lookup
   def self.lookup(symbol)
     Lookup.new(symbol).fetch
   end
 
+
+  # Uses the quote service to get a quote for the given symbol
+  # @param [String, Symbol] symbol The ticker symbol to lookup
+  # @return [StockMarkit::Quote] A populated quote object
+  # @see StockMarkit::Quote
   def self.quote(symbol)
     Quote.new(symbol).fetch
   end
