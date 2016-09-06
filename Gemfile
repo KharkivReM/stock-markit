@@ -18,4 +18,5 @@ group :test, :development do
   gem 'vcr'
   gem 'webmock'
   gem 'yard'
+  gem 'pry'
 end

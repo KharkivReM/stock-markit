@@ -83,17 +83,8 @@ module StockMarkit
       end
 
       def parse_time(stamp)
-        # Set timezone
-        zone = Time.zone
-        Time.zone = 'Eastern Time (US & Canada)'
-
-        time = Time.zone.parse( stamp )
-
-        # Put the original zone back
-        Time.zone = zone
-
-        # Return the utc version
-        return time.utc
+        timezone = ActiveSupport::TimeZone["Eastern Time (US & Canada)"]
+        timezone.parse(stamp).utc
       end
 
   end
