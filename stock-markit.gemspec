@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.homepage    = 'https://github.com/parabuzzle/stock-markit'
   gem.files       = Dir.glob("lib/**/*")
 
-  gem.required_ruby_version = '>= 2.2.0'
+  gem.required_ruby_version = '>= 2.3.0'
 
   gem.add_dependency('httparty', '~> 0.14')
   gem.add_dependency('oj', '~> 2.17')
