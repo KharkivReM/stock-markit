@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'stock-markit/version'
 
 RSpec.describe 'StockMarkit::VERSION' do
   it 'returns a version string' do

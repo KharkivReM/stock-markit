@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'stock-markit/element'
 
 RSpec.describe StockMarkit::Element do
 

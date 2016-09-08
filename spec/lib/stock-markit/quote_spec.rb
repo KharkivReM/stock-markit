@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'stock-markit/quote'
 
 RSpec.describe 'StockMarkit::Quote' do
   describe '#initialize' do

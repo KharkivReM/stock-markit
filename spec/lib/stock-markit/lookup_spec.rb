@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'stock-markit/lookup'
 
 RSpec.describe 'StockMarkit::Lookup' do
   describe '#initialize' do

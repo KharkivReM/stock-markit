@@ -1,3 +1,8 @@
+require 'httparty'
+require 'oj'
+require 'stock-markit/stock'
+require 'stock-markit/api_exception'
+
 module StockMarkit
 
   # Lookup a Stock by Symbol

@@ -1,4 +1,7 @@
 require 'active_support/time'
+require 'httparty'
+require 'oj'
+require 'stock-markit/api_exception'
 
 module StockMarkit
 

@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'stock-markit/chart'
 
 RSpec.describe StockMarkit::Chart do
 
