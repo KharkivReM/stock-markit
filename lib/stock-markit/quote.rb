@@ -57,7 +57,11 @@ module StockMarkit
     private
 
       def lookup_with_api
-        map_stock( Oj.load( self.class.get("/MODApis/Api/v2/Quote/json", @options).body) )
+        results = self.class.get("/MODApis/Api/v2/Quote/json", @options)
+        unless results.code == 200
+          raise ApiException.new("An error occured while attempting to communicate with the api", results)
+        end
+        map_stock( Oj.load( results.body ) )
       end
 
       def map_stock(stock)

@@ -1,6 +1,8 @@
 StockMarkit
 ===
 
+[![Gem Version](https://badge.fury.io/rb/stock-markit.svg)](https://badge.fury.io/rb/stock-markit) [![Build Status](https://travis-ci.org/parabuzzle/stock-markit.svg?branch=master)](https://travis-ci.org/parabuzzle/stock-markit) [![Coverage Status](https://coveralls.io/repos/github/parabuzzle/stock-markit/badge.svg?branch=master)](https://coveralls.io/github/parabuzzle/stock-markit?branch=master)
+
 StockMarkit brings all the great stock information from Markit on Demand (http://dev.markitondemand.com/) to your ruby project.
 
 # Installation
@@ -38,6 +40,15 @@ require 'stock-markit'
 StockMarkit.quote(:twtr) #> StockMarkit::Quote
 ```
 
+# Documentation
+
+The code is fully documented using yard.
+
+```
+yard server
+```
+
+Or you can view the generated docs here: http://www.rubydoc.info/github/parabuzzle/stock-markit/master
 
 # Contributing
  * fork the repository

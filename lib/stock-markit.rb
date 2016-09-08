@@ -6,7 +6,6 @@
 # License::   MIT
 
 require 'httparty'
-require 'hashie'
 require 'oj'
 
 module StockMarkit

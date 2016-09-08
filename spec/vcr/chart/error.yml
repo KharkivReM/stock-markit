@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dev.markitondemand.com/MODApis/Api/v2/InteractiveChart/json?parameters=%7B%22Normalized%22:false,%22NumberOfDays%22:365,%22DataPeriod%22:%22Day%22,%22Elements%22:%5B%7B%22Symbol%22:%22AAPLL%22,%22Type%22:%22price%22,%22Params%22:%5B%22c%22%5D%7D%5D%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '1155'
+      Content-Type:
+      - text/html; charset=utf-8
+      Server:
+      - ''
+      X-Aspnet-Version:
+      - ''
+      P3p:
+      - CP="NON PHY ONL UNI PUR FIN COM NAV INT DEM STA HEA CUR ADM DEV OUR IND",
+        policyref="/w3c/p3p.xml"
+      Set-Cookie:
+      - 3481%5F0=BCE56DCEDF17A00A14CAA2DAA317FA491A71B91CB558638DECDB1DA92CCB68B6;
+        path=/; HttpOnly
+      - GZIP=1; expires=Tue, 07-Sep-2021 05:43:26 GMT; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Thu, 08 Sep 2016 05:43:26 GMT
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" >\r\n<head id=\"header\" runat=\"server\">\r\n
+        \   <title>Site Error</title>\r\n    <style type=\"text/css\">\r\n    body
+        {\r\n\t\tbackground:#fff;\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t\tcolor:
+        #808080;\r\n\t\tfont-family: arial, helvetica, sans-serif ;\r\n\t\tfont-size:
+        80%;\r\n\t\tpadding: 20px;\r\n\t  }\r\n\t  \r\n\t.idstyle \r\n\t{\r\n\t    font-size:
+        x-small;\r\n\t    color: #909090;\r\n\t}\r\n    </style>\r\n</head>\r\n\r\n<body>\r\n\r\n<div
+        id=\"ErrorBody\" style=\"width: 600px; padding-left: 20px;\">\r\n    <h2 class=\"noborder
+        ValidationErrors\">Site Error</h2>\r\n    <p>\r\n        An unexpected error
+        has occurred in the web application. The appropriate people have been notified
+        of this error,\r\n        and will be working to correct the problem as soon
+        as possible.\r\n    </p>\r\n    <p>\r\n        To return to the page where
+        the error occurred use your browser's Back button. If you were entering data
+        on that page, \r\n\t\tit will still be there, and you may retry the action.\r\n
+        \   </p>\r\n    <p class=\"idstyle\">ID: #9EE80727</p>\r\n</div>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Thu, 08 Sep 2016 05:43:26 GMT
+recorded_with: VCR 3.0.3

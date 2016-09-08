@@ -150,7 +150,7 @@ module StockMarkit
       def lookup_with_api
         results = self.class.get("/MODApis/Api/v2/InteractiveChart/json", options)
         if results.code != 200
-          return nil # should throw proper errors here
+          raise ApiException.new("An error occured while attempting to communicate with the api", results)
         end
         StockMarkit::ChartResult.new( Oj.load( results.body ) )
       end

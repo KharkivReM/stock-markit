@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'httparty'
-gem 'hashie'
-gem 'oj'
-gem 'activesupport'
+gem 'httparty', '~> 0.14'
+gem 'oj', '~> 2.17'
+gem 'activesupport', '~> 4.2'
 
 group :test, :development do
   gem 'rspec', '~>3.0'

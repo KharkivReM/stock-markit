@@ -2,6 +2,7 @@
 require 'simplecov'
 require 'simplecov-rcov'
 require 'coveralls'
+require 'pry'
 
 require_relative './support/vcr.rb'
 
