@@ -40,6 +40,36 @@ require 'stock-markit'
 StockMarkit.quote(:twtr) #> StockMarkit::Quote
 ```
 
+## Stock Chart API
+
+### Setup your element
+
+You can put multiple elements on to a chart. Each element must be defined as a `StockMarket::Element` object
+
+```
+price                 = StockMarkit::Element.new(:twtr, :price)
+simple_moving_average = StockMarkit::Element.new(:twtr, :sma)
+```
+
+### Create your chart
+
+```
+chart_options = {
+  normalized: false,
+  number_of_days: 365,
+  data_period: :day,
+  elements: [price, simple_moving_average]
+}
+
+chart = StockMarkit::Chart.new(options)
+```
+
+### Fetch the chart
+
+```
+chart.fetch #> StockMarkit::ChartResult
+```
+
 # Documentation
 
 The code is fully documented using yard.
