@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency('httparty', '~> 0.14')
   gem.add_dependency('oj', '~> 2.17')
-  gem.add_dependency('activesupport', '~> 4.2')
+  gem.add_dependency('activesupport', '~> 5.0.6')
 
   gem.add_development_dependency 'rspec', '~>3.0'
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
